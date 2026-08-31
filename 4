@@ -1,0 +1,46 @@
+public class TreeApp3 {
+
+    public static void main(String[] args) {
+
+        BinaryTree tree = new BinaryTree();
+
+        // =====================================
+        // สร้าง Tree
+        // =====================================
+        tree.createTree5();
+
+        System.out.println("Original Binary Tree");
+        System.out.println("--------------------");
+        tree.printTree();
+
+        // =====================================
+        // 1. ลบ Leaf Node
+        // =====================================
+        System.out.println();
+        System.out.println("Delete Leaf Node : 25");
+
+        tree.delete(25);
+
+        tree.printTree();
+
+        // =====================================
+        // 2. ลบ Node ที่มี Child 1 Node
+        // =====================================
+        System.out.println();
+        System.out.println("Delete Node with 1 Child : 10");
+
+        tree.delete(10);
+
+        tree.printTree();
+
+        // =====================================
+        // 3. ลบ Node ที่มี Child 2 Node
+        // =====================================
+        System.out.println();
+        System.out.println("Delete Node with 2 Children : 30");
+
+        tree.delete(30);
+
+        tree.printTree();
+    }
+}
