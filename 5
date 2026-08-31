@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class TreeApp4 {
+
+    public static void main(String[] args) {
+
+        BinaryTree tree = new BinaryTree();
+
+        // สร้าง Binary Tree จาก createTree6()
+        tree.createTree6();
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter N : ");
+        int N = sc.nextInt();
+
+        // ค้นหา Node
+        BinaryTree.Node node = tree.search(N);
+
+        // =====================================
+        // กรณีไม่พบ Node
+        // =====================================
+        if (node == null) {
+
+            System.out.println(
+                "Cannot found Node(data=" + N + ")"
+            );
+
+        } else {
