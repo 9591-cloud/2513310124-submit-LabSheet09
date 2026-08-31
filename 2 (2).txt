@@ -1,0 +1,9 @@
+public void createTree6() {
+    root = null;
+
+    int[] data = {40, 20, 70, 30, 55, 85, 25, 35, 80, 32};
+
+    for (int i = 0; i < data.length; i++) {
+        insert(data[i]);
+    }
+}

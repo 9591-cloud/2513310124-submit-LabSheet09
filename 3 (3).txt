@@ -1,0 +1,14 @@
+public class TreeApp2 {
+    public static void main(String[] args) {
+
+        BinaryTree tree = new BinaryTree();
+
+        tree.createTree5();
+        System.out.println("Binary Tree from createTree5()");
+        tree.printTree();
+
+        tree.createTree6();
+        System.out.println("Binary Tree from createTree6()");
+        tree.printTree();
+    }
+}
